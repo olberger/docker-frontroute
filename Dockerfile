@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER Christian Lück <christian@lueck.tv>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
-	nginx php5-cli
+	nginx php5-cli ssl-cert
 
 RUN rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 
